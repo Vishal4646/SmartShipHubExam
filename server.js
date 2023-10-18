@@ -14,6 +14,6 @@ app.use(express.json())
 
 app.use("/router", router)
 
-app.listen(4000,"0.0.0.0", ()=>{
-    console.log("Backend server running on port 4000")
+app.listen(4003,"0.0.0.0", ()=>{
+    console.log("Backend server running on port 4003")
 })

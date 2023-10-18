@@ -1,10 +1,10 @@
 const mysql = require("mysql")
 
 const connection = mysql.createConnection({
-    host : 'url',
-    user : 'username',
-    password : 'pass',
-    database : 'db_name',
+    host : 'localhost',
+    user : 'root',
+    password : 'manager',
+    database : 'userdb_smart',
     port: 3306
 })
 

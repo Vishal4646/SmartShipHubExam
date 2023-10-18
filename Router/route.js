@@ -6,14 +6,14 @@ const router = express.Router()
 const utils = require("../utils/utils")
 
 
-  //get All Orders from Orders Table by Customer id
-  router.get("/getOrders/:id", (req,resp) => {
-    const query = `SELECT  * FROM orders where customer_id =?`
-    const id = req.params.id
-    db.query(query , [id], (err,data) => {
-      resp.send(utils.createObject(err,data))
-    })
-  })
+  // //get All Orders from Orders Table by Customer id
+  // router.get("/getOrders/:id", (req,resp) => {
+  //   const query = `SELECT  * FROM orders where customer_id =?`
+  //   const id = req.params.id
+  //   db.query(query , [id], (err,data) => {
+  //     resp.send(utils.createObject(err,data))
+  //   })
+  // })
  
   // //get All order Details of coustomers countrywise in ASC 
   // router.get("/getOrderDetails", (req,resp) => {
